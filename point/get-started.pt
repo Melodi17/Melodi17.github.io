@@ -1,0 +1,45 @@
+import "src/img/point.ico";
+import "src/css/main.css";
+import "src/css/get-started.css";
+import "src/js/main.js";
+import "src/js/get-started.js";
+import "https://fonts.googleapis.com/css?family=Roboto" as "stylesheet";
+
+$title = "Point";
+$page = "Get started";
+
+html {
+	head {
+		title { $title + " | " + $page; }
+	}
+	body {
+		table.banner {
+			tr {
+				td.icon {
+					img { src: "src/img/point.png"; }
+				}
+				td.title {
+					h1 { $title + " ― " + $page; }
+				}
+			}
+		}
+        div.navbar {
+            ul {
+			    li { a { href: "index.html"; "Home"; } }
+			    li { a { href: "about.html"; "About"; } }
+			    li { a { href: "news.html"; "News"; } }
+			    li { a.active { href: "get-started.html"; "Get started"; } }
+			    li { a { href: "download.html"; "Download"; } }
+			    li { a { href: "docs.html"; "Documentation"; }	 }
+			}
+        }
+		
+        p.shaded {
+			"Get started is currently unavailable :(";
+		}
+
+        div.footer {
+			p { "Made by Melodi"; }
+		}
+    }
+}

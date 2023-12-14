@@ -1,0 +1,20 @@
+<link href="src/img/point.ico" rel="icon" /><link href="src/css/main.css" rel="stylesheet" /><link href="src/css/docs.css" rel="stylesheet" /><script src="src/js/main.js"></script><script src="src/js/docs.js"></script><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /><html><head><title>Point | Documentation</title></head><body><table class="banner"><tr><td class="icon"><img src="src/img/point.png" /></td><td class="title"><h1>Point ― Documentation</h1></td></tr></table><div class="navbar"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="news.html">News</a></li><li><a href="get-started.html">Get started</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html" class="active">Documentation</a></li></ul></div><div class="sidebar"><ul><li><a href="#syntax">Syntax</a></li><li><a href="#constants">Constants</a></li><li><a href="#logic">Logic</a></li><li><a href="#variables">Variables</a></li><li><a href="#comments">Comments</a></li><li><a href="#importing">Importing</a></li><li><a href="#attaching">Attaching</a></li></ul></div><div class="content"><h1 class="center">Documentation</h1><table><tr><td class="col"><div id="syntax" class="card"><h2>Syntax</h2><p>The syntax of Point is very similar to css. Line end indicators are necessary while within elements, like shown.</p><pre class="code">a {
+ 'Some text';
+}
+
+button {
+ 'Some other text';
+}
+</pre><p>an element is defined by its name, followed by its classes, id, attributes and content:</p><pre class="code">button#mybuttonid.mybuttonclass {
+ onclick: 'button_click_handler()';
+ 'Click me';
+}
+</pre><p>statements are called by their name, their argument and a trailing semicolon:</p><pre class="code">attach 'Hello world!'</pre></div><div id="constants" class="card"><h2>Constants</h2><p>Constants are values that can be used throughout your code as data</p><pre class="code">// string
+<span style="color:yellow">'Hello world!'
+</span>// number (this can be negative or decimal aswell)
+<span style="color:red">10
+</span>// boolean
+<span style="color:purple">true
+</span>// null type
+<span style="color:gray">null
+</span></pre></div><div id="logic" class="card"><h2>Logic</h2><p>The supported operators of this language are < > - + / * = == & |<br />Strings can be modified/compared with == != +, numbers with < > - + / * and booleans with & |</p></div><div id="variables" class="card"><h2>Variables</h2><p>Variables can be used to access constants multiple times and quickly throughout the code. You can assign to one like this:</p><pre class="code">$myvar = 'Hi!';</pre><p>And then use it like this:</p><pre class="code">$myvar</pre></div></td><td class="gutter"></td><td class="col"><div id="comments" class="card"><h2>Comments</h2><p>Comments are useful for documenting your code or disabling functionality/lines of your code. Inline comments are written with a double-slash like this:</p><pre class="code">// This is a comment</pre><p>It is convention to put a space after // to make it more readable and look nicer.</p></div><div id="importing" class="card"><h2>Importing</h2><p>The import statement allows for quick file linking, based on the file type, the functionality differs. If the specified file is a css file, it will be linked like a stylesheet, this is also suppored for ico files as icons, html files as preloads, js files as script elements. The pt file extension during build, will be transpiled aswell, to the matching directory structure.</p></div><div id="attaching" class="card"><h2>Attaching</h2><p>The attach statement, during build will read the file's content and wrap it around the transpiled result, to delimit between above and below, use $&</p></div></td></tr></table></div><div class="footer"><p>Made by Melodi</p></div></body></html>

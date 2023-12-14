@@ -1,0 +1,43 @@
+import "src/css/main.css";
+import "test.pt";
+
+$title = "Point";
+
+html {
+	head {
+		title { $title; }
+	}
+	body {
+		h1 { "Introducing " + $title; }
+
+		h2 { "Installation"; }
+		p { "Install " + $title + " with command prompt"; }
+		.code {
+			"$ git clone https://github.com/Melodi17/Point"; br {}
+			"$ cd Point"; br {}	
+			"$ install.bat"; br {}
+		}
+
+		h2 { "Getting started"; }
+		p { "Once you have installed " + $title + ", you can start using it by creating a new file. Enter the following in the file"; }
+		pre.code {
+			"html {\n";
+			"	head {\n";
+			"		title { 'Test website'; }\n";
+			"	}\n";
+			"	body {\n";
+			"		h1 { 'Test website'; }\n";
+			"		p {\n";
+			"			'Welcome to the test site!';\n";
+			"		}\n";
+			"	}\n";
+			"}";
+		}
+		p { ""; }
+
+		h2 { "Syntax"; }
+		p {
+			"";
+		}
+	}
+}

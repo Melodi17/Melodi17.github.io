@@ -1,0 +1,65 @@
+import "src/img/poin	t.ico";
+import "src/css/main.css";
+import "src/css/download.css";
+import "src/js/main.js";
+import "src/js/download.js";
+import "https://fonts.googleapis.com/css?family=Roboto" as "stylesheet";
+
+$title = "Point";
+$page = "Download";
+
+html {
+	head {
+		title { $title + " | " + $page; }
+	}
+	body {
+		table.banner {
+			tr {
+				td.icon {
+					img { src: "src/img/point.png"; }
+				}
+				td.title {
+					h1 { $title + " ― " + $page; }
+				}
+			}
+		}
+        div.navbar {
+            ul {
+			    li { a { href: "index.html"; "Home"; } }
+			    li { a { href: "about.html"; "About"; } }
+			    li { a { href: "news.html"; "News"; } }
+			    li { a { href: "get-started.html"; "Get started"; } }
+			    li { a.active { href: "download.html"; "Download"; } }
+			    li { a { href: "docs.html"; "Documentation"; }	 }
+			}
+        }
+        div.content {
+			h1.center { $page; }
+			div.center {
+				button.primary { "Download binary"; onclick: "downloadbinary();"; }
+				button.secondary { "Download source"; onclick: "visitsource();"; }
+			}
+			table {
+				tr {
+					td.col {
+						div.card {
+							h2 { "Download binary"; }
+							p { "Download binary will download you a freshly-baked copy of the point executable so you can start coding straight away!"; }
+						}
+					}
+					td.gutter { }
+					td.col {
+						div.card {
+							h2 { "Download source"; }
+							p { "Download source will allow you to visit the github repository so you can compile yourself or contribute to the project."; }
+						}
+					}
+				}
+			}
+		}
+
+        div.footer {
+			p { "Made by Melodi"; }
+		}
+    }
+}

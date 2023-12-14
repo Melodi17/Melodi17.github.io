@@ -1,0 +1,47 @@
+table {
+    width: 50%;
+    margin: 10% auto 0px auto;
+}
+
+td.image {
+    width: 60%;
+}
+
+td.image img {
+    width: 100%;
+}
+
+td.menu {
+    width: 40%;
+}
+
+td.menu ul {
+    list-style-type: none;
+}
+
+td.menu ul li {
+    margin-top: 10px;
+    width: 100%;
+}
+
+td.menu ul li a {
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+    padding: 3px 10px;
+    font-size: 30px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+td.menu ul li a.active {                                                           
+    color: white;
+    background-color: #1875FF;
+    box-shadow: 0 0 15px #1875FF;
+}
+
+td.menu ul li a:hover {                                                           
+    color: white;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 0 15px black;
+}

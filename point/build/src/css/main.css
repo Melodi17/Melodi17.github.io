@@ -1,0 +1,219 @@
+body {
+  font-family: 'Roboto', 'sans-serif';
+  margin: 0;
+}
+
+ul, ol {
+  margin: 10px 3px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a.link:hover {
+  color: #1875FF;
+  text-shadow: 0 0 15px #1875FF;
+}
+
+.code {
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-family: Monaco, monospace;
+  letter-spacing: -0.05em;
+  line-height: 140%;
+  padding: 10px;
+  width: fit-content;
+  word-break: normal;
+}
+
+pre {
+  -moz-tab-size: 4;
+  /* Firefox 4+ */
+  -o-tab-size: 4;
+  /* Opera 11.5 & 12.1 only */
+  tab-size: 4;
+  /* Chrome 21+, Safari 6.1+, Opera 15+ */
+}
+
+button.primary {
+  background-color: #1875FF;
+  border-radius: 10px;
+  border: 2px solid #1875FF;
+  box-shadow: 0 0 15px #1875FF;
+  color: white;
+  font-size: 20px;
+  margin: 3px;
+  padding: 5px 30px;
+  transition: 0.3s;
+}
+
+button.primary:hover {
+  background-color: transparent;
+  box-shadow: 0 0 30px #1875FF;
+  color: black;
+}
+
+button.secondary {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid #1799ce;
+  box-shadow: 0 0 15px #1799ce;
+  color: black;
+  font-size: 20px;
+  margin: 3px;
+  padding: 5px 30px;
+  transition: 0.3s;
+}
+
+button.secondary:hover {
+  background-color: #1799ce;
+  box-shadow: 0 0 30px #1799ce;
+  color: white;
+}
+
+.banner {
+  /*position: fixed;*/
+  background-color: rgb(61, 61, 61);
+  background-image: url("../img/banner.jpg");
+  background-position: 1650px -51px;
+  background-size: 125%;
+  color: white;
+  height: 10%;
+  left: 0;
+  overflow: hidden;
+  text-align: left;
+  top: 0;
+  width: 100%;
+}
+
+.banner .icon {
+  height: 100%;
+  width: 5%;
+}
+
+.banner .title {
+  height: 100%;
+}
+
+.banner img {
+  display: inline;
+  float: left;
+  height: 90px;
+  margin: 5%;
+}
+
+.banner h1 {
+  float: left;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: rgb(61, 61, 61);
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+  /*border: 3px solid rgb(61, 61, 61);*/
+  border-radius: 10px;
+  margin: 15px 15px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+/*.content:hover {
+  box-shadow: 0 0 15px rgb(61, 61, 61);
+}*/
+
+td.col {
+  vertical-align: top;
+  width: 45%;
+}
+
+td.gutter {
+  width: 5%;
+}
+
+.card {
+  display: inline-block;
+}
+
+/*.prenav {
+  height: 10%;
+  width: 100%;
+  background-color: lightgray;
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgb(61, 61, 61);
+}
+
+.prenav h1 {
+  text-align: left;
+  margin-left: 125px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.prenav img {
+  height: 100%;
+  padding: 0;
+  float: left;
+}*/
+
+.navbar {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: black;
+  float: left;
+  font-size: 20px;
+  margin: 7px;
+  padding: 5px 30px;
+  transition: 0.3s;
+}
+
+.navbar li a.active {
+  background-color: #1875FF;
+  border: 2px solid #1875FF;
+  box-shadow: 0 0 15px #1875FF;
+  color: white;
+  opacity: 100%;
+}
+
+.navbar li a:hover {
+  background-color: rgb(61, 61, 61);
+  border: 2px solid rgb(61, 61, 61);
+  box-shadow: 0 0 15px rgb(61, 61, 61);
+  color: white;
+}
+
+/*rgb(61, 61, 61)*/
