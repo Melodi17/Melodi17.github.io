@@ -1,0 +1,183 @@
+body {
+  /* Nice font */
+  font-family: "Open Sans", sans-serif;
+
+  /* Background color */
+  background-color: #f5f5f5;
+
+  /* Text color */
+  color: #333;
+
+  /* Font size */
+  font-size: 16px;
+
+  /* Padding */
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-radius: 7px;
+  background-color: #d4d4d4;
+  padding: 10px;
+}
+
+/* if a h* is below a p, add more spacing */
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  margin-top: 30px;
+}
+
+/* indent paragraphs */
+p {
+  padding-left: 20px;
+}
+
+.wrapper {
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+.swear {
+    /* filter: blur(10px);
+    -webkit-filter: blur(10px); */
+    background-color: black;
+    color: black;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.swear:hover {
+    /* filter: blur(0px);
+    -webkit-filter: blur(0px); */
+    background-color: transparent;
+    color: #333;
+    border-radius: 7px;
+}
+
+
+header img {
+    width: 20%;
+    /* center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer {
+    /* center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #333;
+    color: white;
+    border-radius: 7px;
+    padding-bottom: 10px;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+    background-color: #5a5a5a;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color: #0977e6;
+    border-bottom: 2px solid #0977e6;
+}
+
+ul.socials {
+    list-style-type: none;
+    /* allow it to be centered */
+    margin: 0;
+    padding: 0;
+
+    /* center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    /* Make items align to horisontolally */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* add some spacing between subitems */
+ul.socials li {
+    margin-right: 30px;
+}
