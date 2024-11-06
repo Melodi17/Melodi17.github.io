@@ -1,46 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Main</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melodi17 - GitHub</title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.overlap.js"></script>
 </head>
 <body>
-    <h1 class="title">Melodi - Github</h1>
 
-    <nav>
-        <a href="/">Main</a>
+<div>
+    <a href="https://github.com/Melodi17" class="icon" style="top: 7%; left: 19%;"
+       data-bs-toggle="tooltip" data-bs-title="GitHub: View my GitHub profile">
+        <img src="img/github.png" alt="GitHub"/>
+    </a>
 
-        <a href="#preserved-pages">Preserved pages</a>
-        <a href="#projects">Projects</a>
-    </nav>
+    <a href="https://github.com/Melodi17/Carp" class="icon" style="top: 26%; left: 85%;"
+       data-bs-toggle="tooltip" data-bs-title="Carp: A static-typed dynamic scripting language">
+        <img src="img/carp.png" alt="GitHub"/>
+    </a>
 
+    <a href="https://github.com/Melodi17/GameLauncher" class="icon" style="top: 73%; left: 42%;"
+       data-bs-toggle="tooltip"
+       data-bs-title="Game Launcher: Universal game launcher that collects metadata for lonely games. Plex alternative for games libraries">
+        <img src="img/gamelauncher.png" alt="GitHub"/>
+    </a>
 
-    <div class="container">
-        <h2>About</h2>
+    <a href="https://github.com/Melodi17/tdc-data" class="icon" style="top: 84%; left: 68%;"
+       data-bs-toggle="tooltip"
+       data-bs-title="TDC-Data: A server-side mod that extends the power of datapacks | Collaboration with TheDeathlyCow">
+        <img src="img/tdcdata.png" alt="GitHub"/>
+    </a>
 
-        <p>
-            This is a personal website for me to host my projects and other things.
-        </p>
+    <a href="https://github.com/Melodi17/Gambling-my-beloved" class="icon" style="top: 89%; left: 7%;"
+       data-bs-toggle="tooltip"
+       data-bs-title="Transnistrian Stock Exchange: Stock simulator website project using ASP.Net">
+        <img src="img/gambling.png" alt="GitHub"/>
+    </a>
+</div>
 
+<div class="container-fluid col-8 p-5 d-flex vh-100">
+    <div class="row g-5 align-items-center">
+        <div class="col-6 no-overlap">
+            <h1 class="display-3">Melodi17</h1>
+            <p class="lead">I'm a developer that primarily spends too much time re-making existing stuff for fun.</p>
 
-        <h2>Directory</h2>
+            <!--      <div class="d-grid gap-2 d-md-flex justify-content-md-start">-->
+            <!--        <a href="https://github.com/Melodi17" class="btn btn-primary btn-lg" style="background-color: #e15044; border-color: #ae3d34;" role="button">GitHub</a>-->
+            <!--      </div>-->
+        </div>
 
-        <div class="directory">
-            <h3>Projects</h1> <div id="projects">
-            <ul>
-                <li class="directory-item"><a href="/point/build/index.html">Point Web</a></li>
-                <li class="directory-item"><a href="/MFW/index.html">MFW (swearing is present)</a></li>
-            </ul>
-
-            <h3>Preserved pages</h1> <div id="preserved-pages">
-            <ul>
-                <li class="directory-item"><a href="/beepboopmachines.com/g/index.html">IB Physics Graphing Template (extracted from beepboopmachines.com)</a></li>
-            </ul>
+        <div class="col-6 no-overlap">
+            <img class="img-fluid shadow-lg rounded-3" src="img/profile.png" alt="" width="300" height="300" style="height: 80%"/>
         </div>
     </div>
+</div>
+
+
+<script src="js/main.js"></script>
+
 </body>
 </html>

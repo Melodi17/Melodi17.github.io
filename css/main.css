@@ -1,0 +1,15 @@
+.icon {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: filter 0.1s ease;
+    position: absolute;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon img:hover {
+    filter: brightness(150%);
+}
